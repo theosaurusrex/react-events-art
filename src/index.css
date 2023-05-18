@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #fcf3f6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c292b;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2c292b;
+}
   
-  body {
-    font-family: sans-serif;
-    margin: 3rem;
-    background-color: #dfdfdf;
-  }
-  
-  h1, h2 {
-    color: #333333;
-  }
   
   .btn {
     font: inherit;
@@ -71,3 +80,4 @@
     top: 0;
     left: 0;
   }
+  
