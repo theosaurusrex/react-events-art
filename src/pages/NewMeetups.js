@@ -1,6 +1,9 @@
+import { useHistory } from 'react-router-dom';
 import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
 function NewMeetups() {
+  const history = useHistory();
+
   function AddMeetupHandler(meetupData) {
     fetch(
       "https://artists-making-art-default-rtdb.firebaseio.com/meetups.json",
@@ -9,7 +12,9 @@ function NewMeetups() {
         body: JSON.stringify(meetupData),
         headers: { "Content-Type": "application/json" }
       }
-    );
+    ).then (()=>{
+      history.replace('/')
+    });
   }
   return (
     <div>

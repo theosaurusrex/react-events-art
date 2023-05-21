@@ -21,7 +21,7 @@ function EventCard(props) {
 
   return (
     <div className="card">
-      <image>{props.image}</image>
+      <div>{props.image}</div>
       <p>{props.altText}</p>
       <h2>{props.title}</h2>
       <p>{props.datetime}</p>
